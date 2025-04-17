@@ -1,10 +1,21 @@
-import React, { memo, useState } from "react";
+import React, { memo, useEffect, useRef, useState } from "react";
+import { useMarkdown } from "./hooks/useMarkdown";
+import { inputVal } from "./mock/makedown";
 
 const App = memo(() => {
   const [value, setValue] = useState("");
+  const markdownResultRef = useRef(null)
+  const [markdownResult] = useMarkdown(value)
+
+  useEffect(() => setValue(inputVal), [])
+  
+  useEffect(() => {
+    markdownResultRef.current.innerHTML = markdownResult
+  }, [markdownResult])
 
   const changeValue = (e) => {
     setValue(e.target.value)
+    markdownResult.current.innerHTML = e.target.value
   }
 
   return (
@@ -22,7 +33,7 @@ const App = memo(() => {
         {/* <!-- 右侧预览部分 --> */}
         <div>
           <h2 className="align">效果预览</h2>
-          <div className="info" ></div>
+          <div className="info" ref={markdownResultRef}></div>
         </div>
       </div>
     </div>
