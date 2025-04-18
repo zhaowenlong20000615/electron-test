@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>音乐播放器</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div id="currentPlaying">
+      <p>当前播放：<span id="currentPlayingTrackName">无播放音源</span></p>
+    </div>
+    <!-- 音频播放器 -->
+    <audio id="audioPlayer" controls>
+      <source id="audioSource" src="" type="audio/mpeg" />
+      你的浏览器不支持音频播放器元素
+    </audio>
+    <!-- 音乐列表 -->
+    <ul id="playlist">
+      <li song="./music/Gotta Have You.mp3" class="playing">Gotta Have You</li>
+      <li song="./music/K歌之王 - 陈奕迅.mp3">K歌之王</li>
+      <li song="./music/M2M - Give A Little Love.mp3">Give A Little Love</li>
+      <li song="./music/Miley Cyrus - Dream.mp3">Dream</li>
+      <li song="./music/Nell - 聚集记忆的时间.mp3">聚集记忆的时间</li>
+      <li song="./music/光GENJI - 勇气百分百.mp3">勇气100%</li>
+      <li song="./music/光と影のロマン - 宇德敬子.mp3">光と影のロマン</li>
+    </ul>
+    <script src="./index.js"></script>
+  </body>
+</html>
+

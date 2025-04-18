@@ -1,0 +1,44 @@
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #f7f7f7;
+  margin: 0;
+  padding: 20px;
+  line-height: 1.6;
+  color: #333;
+}
+
+#audioPlayer {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+#playlist {
+  list-style: none;
+  padding: 0;
+}
+
+#playlist li {
+  padding: 10px;
+  background: #fff;
+  border-bottom: 1px solid #ccc;
+  cursor: pointer;
+}
+
+#playlist li:hover {
+  background: #f3f3f3;
+}
+
+#playlist li.active {
+  background: #e7e7e7;
+  color: #5cb85c;
+}
+
+#currentPlaying {
+  margin-bottom: 20px;
+}
+
+#playlist li.playing {
+  background: #e7e7e7;
+  color: #5cb85c;
+}
+

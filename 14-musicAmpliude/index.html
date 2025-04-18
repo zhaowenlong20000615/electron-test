@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>音乐播放器</title>
+  <link rel="stylesheet" href="./index.css" />
+</head>
+
+<body>
+  <div id="amplitude-player">
+    <!-- 当前播放的歌曲 -->
+    <div id="currentPlaying">
+      <p>当前播放：<span data-amplitude-song-info="name"></span></p>
+    </div>
+
+    <!-- 播放器控制面板 -->
+    <div class="play-container">
+      <!-- 上一曲 -->
+      <div class="btn amplitude-prev"></div>
+      <!-- 播放/暂停 -->
+      <div class="btn amplitude-play-pause"></div>
+      <!-- 下一曲 -->
+      <div class="btn amplitude-next"></div>
+
+      <!-- 播放时间 -->
+      <div class="time-container">
+        <!-- 当前时间 -->
+        <span class="current-time">
+          <span class="amplitude-current-minutes"></span>:<span class="amplitude-current-seconds"></span>
+        </span>
+        <span>/</span>
+        <!-- 总时长 -->
+        <span class="duration">
+          <span class="amplitude-duration-minutes"></span>:<span class="amplitude-duration-seconds"></span>
+        </span>
+      </div>
+
+      <!-- 播放进度 -->
+      <div class="progress-container">
+        <input type="range" class="amplitude-song-slider" />
+      </div>
+
+      <!-- 音量控制 -->
+      <div class="volume-container">
+        <!-- 静音按钮 -->
+        <div class="volume-button amplitude-mute"></div>
+        <!-- 音量滑块 -->
+        <input type="range" class="volume-range amplitude-volume-slider" />
+      </div>
+    </div>
+
+    <!-- 播放列表 -->
+    <ul class="amplitude-playlist">
+      <li class="amplitude-song-container amplitude-play-pause" data-amplitude-song-index="0">
+        Gotta Have You
+      </li>
+      <li class="amplitude-song-container amplitude-play-pause" data-amplitude-song-index="1">
+        K歌之王
+      </li>
+      <li class="amplitude-song-container amplitude-play-pause" data-amplitude-song-index="2">
+        Give A Little Love
+      </li>
+    </ul>
+  </div>
+  <script src="./library/amplitude.js"></script>
+  <script src="./index.js"></script>
+</body>
+
+</html>
