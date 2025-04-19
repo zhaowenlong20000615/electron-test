@@ -1,0 +1,11 @@
+.footer {
+  padding: 1rem 0 0.8rem 0;
+  height: 4rem;
+  color: var(--bg-1);
+}
+.footer .source_name,
+.footer .license_number {
+  font-size: 0.7rem;
+  text-align: center;
+  color: var(--fontColor);
+}

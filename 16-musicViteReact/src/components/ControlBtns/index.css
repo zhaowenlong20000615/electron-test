@@ -1,0 +1,42 @@
+.controlBtns {
+  width: 100vw;
+  height: 30px;
+  /* outline: 1px solid; */
+  display: flex;
+  align-items: center;
+  background-color: var(--bg-4);
+}
+
+.controlBtns > div {
+  width: 14px;
+  height: 14px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+  margin-left: 8px;
+  cursor: pointer;
+}
+
+.controlBtns > div:first-child {
+  background-color: rgb(237, 26, 26);
+  color: rgb(237, 26, 26);
+  transition: 0.5s;
+}
+
+.controlBtns > div:first-child:hover {
+  color: var(--gray2);
+}
+
+.controlBtns > div:last-child {
+  background-color: rgb(252, 162, 6);
+  color: rgb(252, 162, 6);
+  transition: 0.5s;
+  padding-top: 2px;
+}
+
+.controlBtns > div:last-child:hover {
+  color: var(--gray2);
+}

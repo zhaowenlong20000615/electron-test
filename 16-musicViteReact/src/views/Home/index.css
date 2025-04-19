@@ -1,0 +1,13 @@
+.music {
+  position: relative;
+  background: var(--bg-2);
+  width: 25rem;
+  height: 100vh;
+  /* border-radius: 0.5rem; */
+  overflow: hidden;
+}
+
+.music-player {
+  padding: 0 2rem;
+  height: 28rem;
+}
