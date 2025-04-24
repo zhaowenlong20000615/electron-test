@@ -1,0 +1,35 @@
+{
+  "appId": "com.zhao.markdown",
+  "productName": "Markdown Editor",
+  "mac": {
+    "category": "public.app-category.utilities",
+    "target": [
+      "dmg",
+      "pkg"
+    ]
+  },
+  "dmg": {
+    "title": "Markdown Editor",
+    "icon": "./icons",
+    "background": "./assets/background.jpeg",
+    "window": {
+      "width": 660,
+      "height": 400
+    },
+    "contents": [
+      {
+        "x": 180,
+        "y": 170
+      },
+      {
+        "x": 480,
+        "y": 170,
+        "type": "link",
+        "path": "/Applications"
+      }
+    ]
+  },
+  "pkg": {
+    "installLocation": "/Applications"
+  }
+}
